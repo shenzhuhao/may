@@ -1,0 +1,25 @@
+server:
+  port: 8081
+spring:
+  devtools:
+    restart:
+      trigger-file: shenzhuhao.txt
+  datasource:
+      url: jdbc:mysql://localhost:3306/udb?useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2B8
+      username: root
+      password: 1234
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+
+shenzhuhao:
+  name: shitianhao
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
